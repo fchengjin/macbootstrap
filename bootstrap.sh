@@ -20,9 +20,8 @@ if [[ ! -e /usr/local/bin/brew ]]; then
 else
     echo "You have installed brew"
 fi
-
+export HOMEBREW_NO_AUTO_UPDATE=true
+mkdir ~/.macbootstrap
+cp -r * ~/.macbootstrap
 brew install git
-
-git clone --depth=1 -b ${BRANCH} https://github.com/bestswifter/macbootstrap.git ~/.macbootstrap
-cd ~/.macbootstrap
 bash install.sh
