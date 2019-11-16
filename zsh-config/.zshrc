@@ -64,6 +64,7 @@ done
 
 # Bind key
 bindkey ';' autosuggest-execute
+alias npm='npm --registry=https://registry.npm.taobao.org'
 
 #archey -o
 autoload -U bashcompinit
